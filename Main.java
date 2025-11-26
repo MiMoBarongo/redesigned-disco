@@ -2,113 +2,282 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+        // BILLING INFO
 
-        System.out.println("\n\tDedan Kimathi University of Technology");
-        System.out.println("\t\tSchool of Computer Science and IT");
-        System.out.println("\t\t\tDepartment of Computer Science");
-        System.out.println("\t\t\tAcademic Year: 2024/2025");
-        System.out.println("\t\tSTUDENT MARKSHEET(SECOND YEAR RESULTS)");
+        System.out.println("BILLING INFORMATION\nEnter the Customer name:");
+        String customer = sc.nextLine();
+        System.out.println("Enter the Customer location:");
+        String location1 = sc.nextLine();
+        System.out.println("Enter the Customer address:");
+        String address1 = sc.nextLine();
+        System.out.println("Enter the Customer GSTIN:");
+        String GSTIN1 = sc.nextLine();
+        System.out.println("Enter the Customer Phone number:");
+        String phoneNumber1 = sc.nextLine();
+        System.out.println("Enter the Customer Email address:");
+        String email1 = sc.nextLine();
 
-        System.out.println("\nEnter the registration number of the 1st student:");
-        String reg1 = sc.nextLine();
-        System.out.println("Enter the full name of the 1st student:");
-        String name1 = sc.nextLine();
-        System.out.println("Enter the marks of the 7 units respectively [CCS101,CCS102,CCS103,CCS104,CCS105,CCS106,CCS107]:");
-        int s1u1 = sc.nextInt();
-        int s1u2 = sc.nextInt();
-        int s1u3 = sc.nextInt();
-        int s1u4 = sc.nextInt();
-        int s1u5 = sc.nextInt();
-        int s1u6 = sc.nextInt();
-        int s1u7 = sc.nextInt();
-        int total1 = s1u1 + s1u2 + s1u3 + s1u4 + s1u5 + s1u6  + s1u7;
-        double average1 = total1 / 7.0;
+
+        // SHIPPING INFO
+
+        System.out.println("\nSHIPPING INFORMATION\nEnter the Recipient name:");
+        String recipient = sc.nextLine();
+        System.out.println("Enter the Recipient location:");
+        String location2 = sc.nextLine();
+        System.out.println("Enter the Recipient address:");
+        String address2 = sc.nextLine();
+        System.out.println("Enter the Recipient GSTIN:");
+        String GSTIN2 = sc.nextLine();
+        System.out.println("Enter the Recipient Phone number:");
+        String phoneNumber2 = sc.nextLine();
+        System.out.println("Enter the Recipient Email address:");
+        String email2 = sc.nextLine();
+
+
+        // PRODUCT 1
+
+        System.out.println("\nProduct 1: Enter the product code:");
+        String productCode1 = sc.nextLine();
+        System.out.println("Product 1: Enter the product name:");
+        String productName1 = sc.nextLine();
+        System.out.println("Product 1: Enter the product HNS code:");
+        String productHNSCode1 = sc.nextLine();
+        System.out.println("Product 1: Enter the product quantity:");
+        int productQuantity1 = sc.nextInt();
+        sc.nextLine(); // FIXED
+        System.out.println("Product 1: Enter the product units:");
+        String productUnits1 = sc.nextLine();
+        System.out.println("Product 1: Enter the product rate:");
+        double productRate1 = sc.nextDouble();
+        System.out.println("Product 1: Enter the product tax percentage:");
+        double productTax1 = sc.nextDouble();
         sc.nextLine();
 
 
-        System.out.println("Enter the registration number of the 2nd student:");
-        String reg2 = sc.nextLine();
-        System.out.println("Enter the full name of the 2st student:");
-        String name2 = sc.nextLine();
-        System.out.println("Enter the marks of the 7 units respectively [CCS101,CCS102,CCS103,CCS104,CCS105,CCS106,CCS107]:");
-        int s2u1 = sc.nextInt();
-        int s2u2 = sc.nextInt();
-        int s2u3 = sc.nextInt();
-        int s2u4 = sc.nextInt();
-        int s2u5 = sc.nextInt();
-        int s2u6 = sc.nextInt();
-        int s2u7 = sc.nextInt();
-        int total2 = s2u1 + s2u2 + s2u3 + s2u4 + s2u5 + s2u6  + s2u7;
-        double average2 = total2 / 7.0;
+        // PRODUCT 2
+
+        System.out.println("\nProduct 2: Enter the product code:");
+        String productCode2 = sc.nextLine();
+        System.out.println("Product 2: Enter the product name:");
+        String productName2 = sc.nextLine();
+        System.out.println("Product 2: Enter the product HNS code:");
+        String productHNSCode2 = sc.nextLine();
+        System.out.println("Product 2: Enter the product quantity:");
+        int productQuantity2 = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Product 2: Enter the product units:");
+        String productUnits2 = sc.nextLine();
+        System.out.println("Product 2: Enter the product rate:");
+        double productRate2 = sc.nextDouble();
+        System.out.println("Product 2: Enter the product tax percentage:");
+        double productTax2 = sc.nextDouble();
         sc.nextLine();
 
 
+        // PRODUCT 3
 
-        System.out.println("Enter the registration number of the 3rd student:");
-        String reg3 = sc.nextLine();
-        System.out.println("Enter the full name of the 3rd student:");
-        String name3 = sc.nextLine();
-        System.out.println("Enter the marks of the 7 units respectively [CCS101,CCS102,CCS103,CCS104,CCS105,CCS106,CCS107]:");
-        int s3u1 = sc.nextInt();
-        int s3u2 = sc.nextInt();
-        int s3u3 = sc.nextInt();
-        int s3u4 = sc.nextInt();
-        int s3u5 = sc.nextInt();
-        int s3u6 = sc.nextInt();
-        int s3u7 = sc.nextInt();
-        int total3 = s3u1 + s3u2 + s3u3 + s3u4 + s3u5 + s3u6  + s3u7;
-        double average3 = total3 / 7.0;
+        System.out.println("\nProduct 3: Enter the product code:");
+        String productCode3 = sc.nextLine();
+        System.out.println("Product 3: Enter the product name:");
+        String productName3 = sc.nextLine();
+        System.out.println("Product 3: Enter the product HNS code:");
+        String productHNSCode3 = sc.nextLine();
+        System.out.println("Product 3: Enter the product quantity:");
+        int productQuantity3 = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Product 3: Enter the product units:");
+        String productUnits3 = sc.nextLine();
+        System.out.println("Product 3: Enter the product rate:");
+        double productRate3 = sc.nextDouble();
+        System.out.println("Product 3: Enter the product tax percentage:");
+        double productTax3 = sc.nextDouble();
+        sc.nextLine();
+
+        // PRODUCT 4
+
+        System.out.println("\nProduct 4: Enter the product code:");
+        String productCode4 = sc.nextLine();
+        System.out.println("Product 4: Enter the product name:");
+        String productName4 = sc.nextLine();
+        System.out.println("Product 4: Enter the product HNS code:");
+        String productHNSCode4 = sc.nextLine();
+        System.out.println("Product 4: Enter the product quantity:");
+        int productQuantity4 = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Product 4: Enter the product units:");
+        String productUnits4 = sc.nextLine();
+        System.out.println("Product 4: Enter the product rate:");
+        double productRate4 = sc.nextDouble();
+        System.out.println("Product 4: Enter the product tax percentage:");
+        double productTax4 = sc.nextDouble();
         sc.nextLine();
 
 
+        // PRODUCT 5
 
-        System.out.println("Enter the registration number of the 4th student:");
-        String reg4 = sc.nextLine();
-        System.out.println("Enter the full name of the 4th student:");
-        String name4 = sc.nextLine();
-        System.out.println("Enter the marks of the 7 units respectively [CCS101,CCS102,CCS103,CCS104,CCS105,CCS106,CCS107]:");
-        int s4u1 = sc.nextInt();
-        int s4u2 = sc.nextInt();
-        int s4u3 = sc.nextInt();
-        int s4u4 = sc.nextInt();
-        int s4u5 = sc.nextInt();
-        int s4u6 = sc.nextInt();
-        int s4u7 = sc.nextInt();
-        int total4 = s4u1 + s4u2 + s4u3 + s4u4 + s4u5 + s4u6  + s4u7;
-        double average4 = total4 / 7.0;
+        System.out.println("\nProduct 5: Enter the product code:");
+        String productCode5 = sc.nextLine();
+        System.out.println("Product 5: Enter the product name:");
+        String productName5 = sc.nextLine();
+        System.out.println("Product 5: Enter the product HNS code:");
+        String productHNSCode5 = sc.nextLine();
+        System.out.println("Product 5: Enter the product quantity:");
+        int productQuantity5 = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Product 5: Enter the product units:");
+        String productUnits5 = sc.nextLine();
+        System.out.println("Product 5: Enter the product rate:");
+        double productRate5 = sc.nextDouble();
+        System.out.println("Product 5: Enter the product tax percentage:");
+        double productTax5 = sc.nextDouble();
         sc.nextLine();
 
 
+        // PRODUCT 6
 
-        System.out.println("Enter the registration number of the 5th student:");
-        String reg5 = sc.nextLine();
-        System.out.println("Enter the full name of the 5th student:");
-        String name5 = sc.nextLine();
-        System.out.println("Enter the marks of the 7 units respectively [CCS101,CCS102,CCS103,CCS104,CCS105,CCS106,CCS107]:");
-        int s5u1 = sc.nextInt();
-        int s5u2 = sc.nextInt();
-        int s5u3 = sc.nextInt();
-        int s5u4 = sc.nextInt();
-        int s5u5 = sc.nextInt();
-        int s5u6 = sc.nextInt();
-        int s5u7 = sc.nextInt();
-        int total5 = s5u1 + s5u2 + s5u3 + s5u4 + s5u5 + s5u6  + s5u7;
-        double average5 = total5 / 7.0;
+        System.out.println("\nProduct 6: Enter the product code:");
+        String productCode6 = sc.nextLine();
+        System.out.println("Product 6: Enter the product name:");
+        String productName6 = sc.nextLine();
+        System.out.println("Product 6: Enter the product HNS code:");
+        String productHNSCode6 = sc.nextLine();
+        System.out.println("Product 6: Enter the product quantity:");
+        int productQuantity6 = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Product 6: Enter the product units:");
+        String productUnits6 = sc.nextLine();
+        System.out.println("Product 6: Enter the product rate:");
+        double productRate6 = sc.nextDouble();
+        System.out.println("Product 6: Enter the product tax percentage:");
+        double productTax6 = sc.nextDouble();
         sc.nextLine();
 
 
+        // PRODUCT 7
 
-System.out.println("\tStudent Score Sheet");
-System.out.println("-------------------------------------------------------------------------------------------------------------------------");
-System.out.println("RegNo. \t\t\t\t\t\tFull Name \t\t\t\t\t\t\tCCS101 \t\tCCS102 \t\tCCS103 \t\tCCS104 \t\tCCS105 \t\tCCS106 \t\tCCS107 \t\tTotals \t\tAverage \t\t\t\tStatus \t\tGrade");
-System.out.println("-------------------------------------------------------------------------------------------------------------------------");
-System.out.println(reg1 + "\t\t\t" + name1 + "\t\t\t\t\t" + s1u1 + "\t\t\t" + s1u2 + "\t\t\t" + s1u3 + "\t\t\t" + s1u4 + "\t\t\t" + s1u5 + "\t\t\t" + s1u6 + "\t\t\t" + s1u7 + "\t\t\t" + total1 + "\t\t\t" + average1);
-System.out.println(reg2 + "\t\t\t" + name2 + "\t\t\t\t\t" + s2u1 + "\t\t\t" + s2u2 + "\t\t\t" + s2u3 + "\t\t\t" + s2u4 + "\t\t\t" + s2u5 + "\t\t\t" + s2u6 + "\t\t\t" + s2u7 + "\t\t\t" + total2 + "\t\t\t" + average2);
-System.out.println(reg3 + "\t\t\t" + name3 + "\t\t\t\t\t" + s3u1 + "\t\t\t" + s3u2 + "\t\t\t" + s3u3 + "\t\t\t" + s3u4 + "\t\t\t" + s3u5 + "\t\t\t" + s3u6 + "\t\t\t" + s3u7 + "\t\t\t" + total3 + "\t\t\t" + average3);
-System.out.println(reg4 + "\t\t\t" + name4 + "\t\t\t\t\t" + s4u1 + "\t\t\t" + s4u2 + "\t\t\t" + s4u3 + "\t\t\t" + s4u4 + "\t\t\t" + s4u5 + "\t\t\t" + s4u6 + "\t\t\t" + s4u7 + "\t\t\t" + total4 + "\t\t\t" + average4);
-System.out.println(reg5 + "\t\t\t" + name5 + "\t\t\t\t\t" + s5u1 + "\t\t\t" + s5u2 + "\t\t\t" + s5u3 + "\t\t\t" + s5u4 + "\t\t\t" + s5u5 + "\t\t\t" + s5u6 + "\t\t\t" + s5u7 + "\t\t\t" + total5 + "\t\t\t" + average5);
+        System.out.println("\nProduct 7: Enter the product code:");
+        String productCode7 = sc.nextLine();
+        System.out.println("Product 7: Enter the product name:");
+        String productName7 = sc.nextLine();
+        System.out.println("Product 7: Enter the product HNS code:");
+        String productHNSCode7 = sc.nextLine();
+        System.out.println("Product 7: Enter the product quantity:");
+        int productQuantity7 = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Product 7: Enter the product units:");
+        String productUnits7 = sc.nextLine();
+        System.out.println("Product 7: Enter the product rate:");
+        double productRate7 = sc.nextDouble();
+        System.out.println("Product 7: Enter the product tax percentage:");
+        double productTax7 = sc.nextDouble();
+
+
+        // CALCULATIONS (Fixed)
+
+
+        double Amount1 = (productQuantity1 * productRate1) +
+                ((productTax1 / 100) * (productQuantity1 * productRate1));
+
+        double Amount2 = (productQuantity2 * productRate2) +
+                ((productTax2 / 100) * (productQuantity2 * productRate2));
+
+        double Amount3 = (productQuantity3 * productRate3) +
+                ((productTax3 / 100) * (productQuantity3 * productRate3));
+
+        double Amount4 = (productQuantity4 * productRate4) +
+                ((productTax4 / 100) * (productQuantity4 * productRate4));
+
+        double Amount5 = (productQuantity5 * productRate5) +
+                ((productTax5 / 100) * (productQuantity5 * productRate5));
+
+        double Amount6 = (productQuantity6 * productRate6) +
+                ((productTax6 / 100) * (productQuantity6 * productRate6));
+
+        double Amount7 = (productQuantity7 * productRate7) +
+                ((productTax7 / 100) * (productQuantity7 * productRate7));
+
+        double Total = Amount1 + Amount2 + Amount3 + Amount4 + Amount5 + Amount6 + Amount7;
+
+        double DiscountRate = 0.6368; // percent
+        double Discounts = Total * (DiscountRate / 100.0);
+
+        double GrandTotal = Total - Discounts;
+
+        sc.close();
+
+
+        // OUTPUT SECTION
+
+
+        System.out.println("--------------------------------------------------------------------------------------------------------------");
+        System.out.printf("%-50s %-50s%n", "Bill To:", "Ship To:");
+        System.out.println("--------------------------------------------------------------------------------------------------------------");
+
+        System.out.printf("%-50s %-50s%n", customer, recipient);
+        System.out.printf("%-50s %-50s%n", address1, address2);
+        System.out.printf("%-50s %-50s%n", location1, location2);
+        System.out.printf("%-50s %-50s%n", "GSTIN: " + GSTIN1, "GSTIN: " + GSTIN2);
+        System.out.printf("%-50s %-50s%n", "Contact: " + phoneNumber1, "Contact: " + phoneNumber2);
+        System.out.printf("%-50s %-50s%n", "Email: " + email1, "Email: " + email2);
+
+        System.out.println("--------------------------------------------------------------------------------------------------------------");
+        System.out.printf("%-50s %-50s%n", "Payment Date: 7 days from date of delivery",
+                "Payment Terms: 100% against invoice");
+        System.out.println("--------------------------------------------------------------------------------------------------------------");
+
+        System.out.printf("| %-4s | %-12s | %-20s | %-10s | %-8s | %-6s | %-10s | %-6s | %-12s |%n",
+                "S.No", "Product Code", "Product Name", "HSN code",
+                "Qty", "Units", "Rate", "Tax", "Amount");
+
+        System.out.println("--------------------------------------------------------------------------------------------------------------");
+
+// ROW 1
+        System.out.printf("| %-4d | %-12s | %-20s | %-10s | %-8d | %-6s | %-10.2f | %-6.0f%% | %-12.2f |%n",
+                1, productCode1, productName1, productHNSCode1, productQuantity1, productUnits1,
+                productRate1, productTax1, Amount1);
+
+// ROW 2
+        System.out.printf("| %-4d | %-12s | %-20s | %-10s | %-8d | %-6s | %-10.2f | %-6.0f%% | %-12.2f |%n",
+                2, productCode2, productName2, productHNSCode2, productQuantity2, productUnits2,
+                productRate2, productTax2, Amount2);
+
+// ROW 3
+        System.out.printf("| %-4d | %-12s | %-20s | %-10s | %-8d | %-6s | %-10.2f | %-6.0f%% | %-12.2f |%n",
+                3, productCode3, productName3, productHNSCode3, productQuantity3, productUnits3,
+                productRate3, productTax3, Amount3);
+
+// ROW 4
+        System.out.printf("| %-4d | %-12s | %-20s | %-10s | %-8d | %-6s | %-10.2f | %-6.0f%% | %-12.2f |%n",
+                4, productCode4, productName4, productHNSCode4, productQuantity4, productUnits4,
+                productRate4, productTax4, Amount4);
+
+// ROW 5
+        System.out.printf("| %-4d | %-12s | %-20s | %-10s | %-8d | %-6s | %-10.2f | %-6.0f%% | %-12.2f |%n",
+                5, productCode5, productName5, productHNSCode5, productQuantity5, productUnits5,
+                productRate5, productTax5, Amount5);
+
+// ROW 6
+        System.out.printf("| %-4d | %-12s | %-20s | %-10s | %-8d | %-6s | %-10.2f | %-6.0f%% | %-12.2f |%n",
+                6, productCode6, productName6, productHNSCode6, productQuantity6, productUnits6,
+                productRate6, productTax6, Amount6);
+
+// ROW 7
+        System.out.printf("| %-4d | %-12s | %-20s | %-10s | %-8d | %-6s | %-10.2f | %-6.0f%% | %-12.2f |%n",
+                7, productCode7, productName7, productHNSCode7, productQuantity7, productUnits7,
+                productRate7, productTax7, Amount7);
+
+        System.out.println("--------------------------------------------------------------------------------------------------------------");
+
+        System.out.printf("%90s %12.2f%n", "Total:", Total);
+        System.out.printf("%90s %12.2f%n", "Discounts:", Discounts);
+        System.out.printf("%90s %12.2f%n", "Grand Total:", GrandTotal);
+
+        System.out.println("--------------------------------------------------------------------------------------------------------------");
+
 
     }
-
 }
+
+
