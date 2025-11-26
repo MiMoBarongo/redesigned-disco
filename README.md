@@ -1,2 +1,10 @@
 # redesigned-disco
-![Screenshot of the student's marksheet](Screenshot2025-11-17021813.png)(Screenshot2025-11-19090619.png)
+![Screenshot of the student's marksheet](Marksheetoutput.png)
+# redesigned-disco
+![Screenshot of the sales invoice](Salesoutput1.png)
+# redesigned-disco
+![Screenshot of the sales invoice](Salesoutput2.png)
+# redesigned-disco
+![Screenshot of the sales invoice](Salesoutput3.png)
+# redesigned-disco
+![Screenshot of the sales invoice](Salesoutput4.png)
